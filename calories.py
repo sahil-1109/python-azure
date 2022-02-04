@@ -1,0 +1,11 @@
+tod_date = input("Today's date ? ");
+print(tod_date);
+bc = int(input("breakfast calories ? "));
+print(bc);
+lc = int(input("lunch calories ? "));
+print(lc);
+dc = int(input("dinner calories ? "));
+print(dc);
+sc = int(input("snacks calories ? "));
+print(sc);
+print("Calories content for " + tod_date +": " + str(bc+lc+dc+sc));
