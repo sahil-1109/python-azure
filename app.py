@@ -1,3 +1,4 @@
+from operator import truediv
 from pywebio.input import *
 from pywebio.output import *
 from flask import Flask
@@ -59,4 +60,5 @@ def validate_name(name):
 app.add_url_rule('/','webio_view',webio_view(exam),methods=['GET','POST','OPTIONS'])
 
 if __name__ == '__main__':
-    app.run(debug=True, port= 5000)
+    app.debug = True
+    app.run(host="0.0.0.0")
